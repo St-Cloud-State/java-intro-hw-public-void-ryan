@@ -44,16 +44,15 @@ public class MyMain {
     public static void main(String[] args) {
         PersonList personList = new PersonList();
 
-        // Create a data file with data for a few person objects
         String dataFile = "data.txt";
 
-        // Call the store() method to read the data and store it in the linked list
+        // read the data and store it in the linked list
         personList.store(dataFile);
 
-        // Call the display() method to display the data
+        // display the data
         personList.display(System.out);
 
-        // Invoke the find() method to search for a person by id
+        // search for a person by id
         String searchId = "30";
         int index = personList.find(searchId);
         if (index != -1) {
